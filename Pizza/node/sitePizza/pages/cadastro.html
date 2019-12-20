@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/styleCad.css"/>
+    <title>Formulário</title>
+</head>
+<body>
+    <div id="banner">
+        <header>
+            <figure>
+                <a href="https://www.instagram.com/joao.vt.rm/?hl=pt-br" target="_blank">
+                    <h1><img src="/img/logo-helloPizza.png" alt="Logo da Hello Pizza"/></h1>
+                </a>
+            </figure>
+            <nav>
+                <ul>
+                    <li><a href="/sitePizza/pages/index.html">Home</a> </li>
+                    <li><a href="https://www.instagram.com/joao.vt.rm/?hl=pt-br" target="_blank">
+                        Sobre</a>
+                    </li>
+                    <li><a href="/cadastro">Cadastre-se</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <section>
+        <div id="contato">
+            <form class="form" action="/newcad" method="POST">
+                <fieldset>
+                    <legend><h3>Contato:</h3></legend>
+                    <div>
+                        <label for="email">E-mail: </label>
+                        <input type="email" name="email" id="email" required minlength="5" maxlength="250"/>
+                    </div>
+                    <div>
+                        <label for="senha">Senha: </label>
+                        <input type="password" name="senha" id="senha" required minlength="7" maxlength="20"/>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend><h3>Dados pessoais:</h3></legend>
+                    <div>
+                        <label for="nome">Nome: </label>
+                        <input type="text" id="nome" name="nome" placeholder="Ex: João" required minlength="2" maxlength="200"/>
+                    </div>
+                    <div>
+                        <label for="tel">Telefone: </label>
+                        <input type="text" id="tel" name="tel" placeholder="Ex (44) 9999-9999" required minlength="10" maxlength="14">
+                    </div>
+                    <div class="sexo">
+                        <label for="sexo">Sexo: </label>
+                        <input type="radio" name="sexo" id="masc" checked/>
+                        <label for="masc">Masculino</label>
+                        <input type="radio" name="sexo" id="femi"/>
+                        <label for="femi">Feminino</label>
+                    </div>
+                    <div>
+                        <label for="data">Data: </label>
+                        <input type="date" name="data" id="data" required/>
+                    </div>
+                    <div>
+                        <label for="foto">Foto de perfil: </label>
+                        <input type="file" name="foto" id="foto" accept="image/*"/>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend><h3>Endereço: </h3></legend>
+                    <div>
+                        <label for="rua">Rua: </label>
+                        <input type="text" name="rua" id="rua" required minlength="7" maxlength="200"/>
+                    </div>
+                    <div>
+                        <label for="comp">Complemento: </label>
+                        <input type="text" name="complemento" id="complemento" required minlength="7" maxlength="200"/>
+                    </div>
+                    <div>
+                        <label for="num">Número: </label>
+                        <input type="number" name="num" id="num" required min="1" max="9999"/>
+                    </div>
+                    <div>
+                        <label for="city">Cidade: </label>
+                        <input type="text" name="city" id="city" required minlength="7" maxlength="200"/>
+                    </div>
+                    <div>
+                        <label for="estado">Estado: </label>
+                        <select name="estado" id="estado" required>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="sp">São Paulo</option>
+                            <option valuse="pr">Paraná</option>
+                            <option value="mt">Mato Grosso</option>
+                        </select>
+                </fieldset>
+                <fieldset>
+                    <legend><h3>Anuncio: </h3></legend>
+                    <div>
+                        <label for="duvida">Como conheçeu o Hello Pizza?:</label>
+                        <textarea name="duvida" id="duvida" maxlength="100" cols="50" rows="5" placeholder="limite 100 caracteres"></textarea>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="ofertas_no_email" id="ofertas_no_email" checked/>
+                        <label for="op">Deseja receber ofertas, promoções etc... Por e-mail: </label>
+                    </div>
+                </fieldset>
+                <input class="btn-sub" type="submit" value="Enviar"/>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div id="copy">
+            <figure>
+                <a id="logo-helloPizza" href="https://twitter.com/joaovictorrama5" target="_blank">
+                    <img src="/img/logo-helloPizza.png" alt="Logo da Hello Pizza"/>
+                </a> 
+            </figure>
+            <p>Todos os direitos não reservados, viva ao open source! &copy;</p>
+        </div>
+    </footer>
+</body>
+</html>

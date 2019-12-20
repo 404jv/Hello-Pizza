@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <title>Hello Pizza</title>
+</head>
+<body>
+    <div id="banner">
+        <header>
+            <figure>
+                <a href="https://www.instagram.com/joao.vt.rm/?hl=pt-br" target="_blank">
+                    <h1><img src="/img/logo-helloPizza.png" alt="Logo da Hello Pizza"/></h1>
+                </a>
+            </figure>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="https://www.instagram.com/joao.vt.rm/?hl=pt-br" target="_blank">
+                        Sobre</a>
+                    </li>
+                    <li><a href="/cadastro">Cadastre-se</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <section>
+        <div id="sabores-pizza">
+            <h2 class="titulo">Conheça os nossos 5 sabores de <em>pizza</em>!</h2>
+            <table>
+                <tr>
+                    <th>Sabor</th>
+                    <th>Queijo e molho</th>
+                    <th>Salada</th>
+                    <th>Carne</th>
+                    <th>Azeite/Champignon</th>
+                </tr>
+                <tr>
+                    <td>Mozzarella</td>
+                    <td class="texto-positivo" rowspan="6">Sim</td>
+                    <td class="texto-negativo">Não</td>
+                    <td class="texto-negativo">Não</td>
+                    <td class="texto-negativo">Não</td>
+                </tr>
+                <tr>
+                    <td>Calabresa</td>
+                    <td class="texto-negativo">Não</td>
+                    <td class="texto-positivo">Sim</td>
+                    <td class="texto-positivo">Sim</td class="texto-positivo">
+                </tr>
+                <tr>
+                    <td>Peperoni</td>
+                    <td class="texto-negativo">Não</td>
+                    <td class="texto-positivo">Sim</td class="texto-positivo">
+                    <td class="texto-positivo">Sim</td class="texto-positivo">
+                </tr>
+                <tr>
+                    <td>Margueria</td>
+                    <td class="texto-positivo">Sim</td class="texto-positivo">
+                    <td class="texto-positivo">Sim</td>
+                    <td class="texto-positivo">Sim</td class="texto-positivo">
+                </tr>
+                <tr>
+                    <td>Portuguesa</td>
+                    <td class="texto-positivo">Sim</td class="texto-positivo">
+                    <td class="texto-positivo">Sim</td class="texto-positivo">
+                    <td class="texto-positivo">Sim</td class="texto-positivo">
+                </tr>
+                <tr>
+                    <td>Alho</td>
+                    <td class="texto-negativo">Não</td>
+                    <td class="texto-negativo">Não</td>
+                    <td class="texto-negativo">Não</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    
+    <section>
+        <div id="contato">
+            <h2 class="titulo">Contato</h2>
+            <form action="/show" method="POST" class="form">
+                <label for="nome">Nome: </label>
+                <input type="text" class="input-nome" name="nome" placeholder="Nome inteiro" required minlength="3" maxlength="200"/>
+                <br/> 
+                <label for="email">E-mail: </label>
+                <input type="text" class="input-email" name="email" placeholder="E-mail" required minlength="3" maxlength="256"/>
+                <br/>
+                <label for="mensagem">Mensagem: </label>
+                <br/>
+                <textarea name="mensagem" class="input-mensagem" placeholder="  Limite de 100 caracteres" required minlength="2" maxlength="100"></textarea>
+                <br/> 
+                <input type="submit" class="btn-sub" value="Enviar mensagem"/>
+            </form>
+            <div id="cad">Não tem uma conta? <a href="/cadastro">Cadastre-se</a></div>
+        </div>        
+    </section>
+    <footer>
+        <div id="copy">
+            <figure>
+                <a id="logo-helloPizza" href="https://twitter.com/joaovictorrama5" target="_blank">
+                    <img src="/img/logo-helloPizza.png" alt="Logo da Hello Pizza"/>
+                </a> 
+            </figure>
+            <p>Todos os direitos não reservados, viva ao open source! &copy;</p>
+        </div>
+    </footer>
+</body>
+</html>

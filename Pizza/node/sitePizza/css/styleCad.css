@@ -1,0 +1,36 @@
+body {
+    color: white;
+}
+
+fieldset {
+    border: none;
+}
+
+h3 {
+    color: white;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 19px;
+}
+
+#contato div {
+    padding: 25px 0px 10px 0px;
+}
+
+#contato .sexo input[type="radio"] {
+    display: none;
+}
+#contato .sexo input[type="radio"] + label {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 15px;
+}
+#contato .sexo input[type="radio"]:checked + label {
+    background-color: #87b50f;
+}
+
+#copy {
+    position: relative;
+    padding: 15px 0 15px 0;
+    display: block;
+    margin-top: 110%;
+}
