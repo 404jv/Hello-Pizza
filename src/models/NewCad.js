@@ -1,65 +1,24 @@
 const mongoose = require("mongoose")
 
 const CadSchema = new mongoose.Schema({
-    email: {
-        type: String,
-        required: true
-    },
-    senha: {
-        type: String,
-        required: true
-    },
-    nome: {
-        type: String,
-        required: true
-    },
-    telefone: {
-        type: String,
-        required: true
-    },
-
-    sexo: {
-        type: String,
-        required: true
-    },
-    data: {
-        type: Date,
-        required: true
-    },
-    rua: {
-        type: String,
-        required: true
-    },
-    complemento: {
-        type: String,
-        required: true
-    },
-    numero: {
-        type: Number,
-        required: true
-    },
-    city: {
-        type: String,
-        required: true
-    },
-    estado: {
-        type: String,
-        required: true
-    },
-    anuncio: {
-        type: String,
-        required: false
-    },
-
-    ofertas_no_email: {
-        type: String,
-        required: false
-    },
-
+    email: String,
+    senha: String,
+    nome: String,
+    telefone: String,
+    sexo: String,
+    data: String,
+    rua: String,
+    complemento: String,
+    numero: Number,
+    city: String,
+    estado: String,
+    anuncio: String,
+    ofertas_no_email: String,
+    
     createAt: {
         type: Date,
         default: Date.now
     }
 })
 
-mongoose.model("NewCad", CadSchema)
+module.exports = mongoose.model("NewCad", CadSchema)
